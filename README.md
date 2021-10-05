@@ -29,6 +29,13 @@ Assuming it turns up and it isn't totally broken I will detail how to get it wor
   I unlocked the BMC by pulling the flash chip out (SOP16 SPI NOR),
   erased it and flashed 773.bin to it.
 
+- 20211005
+  Memory,.. Non ECC DIMMs do not work. Current registered ECC DIMMs
+  I have don't complete the memory setup most of the time. Usually the
+  second channel on the second CPU. Moving them around changes nothing
+  so it's possible the board is broken or it just doesn't like these
+  DIMMs. DIMMs listed as working in gigabytes list on order.
+
 # Links
 
 https://www.servethehome.com/gigabyte-r120-t30-overview-first-cavium-thunderx-system/
