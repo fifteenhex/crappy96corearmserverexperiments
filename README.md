@@ -36,6 +36,11 @@ Assuming it turns up and it isn't totally broken I will detail how to get it wor
   so it's possible the board is broken or it just doesn't like these
   DIMMs. DIMMs listed as working in gigabytes list on order.
 
+- 20211016
+  New DIMMs are apparently working. No memory errors now.
+  To get a working keyboard in the debian installer you must pass acpi=force
+  otherwise devicetree is used and USB doesn't work.
+
 # Links
 
 https://www.servethehome.com/gigabyte-r120-t30-overview-first-cavium-thunderx-system/
