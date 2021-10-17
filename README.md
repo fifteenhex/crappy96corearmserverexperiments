@@ -41,6 +41,13 @@ Assuming it turns up and it isn't totally broken I will detail how to get it wor
   To get a working keyboard in the debian installer you must pass acpi=force
   otherwise devicetree is used and USB doesn't work.
 
+- 20211017
+  console=tty0 acpi=force is the secret sauce. They allow the debian installer
+  to run perfectly. You need a USB ethernet adapter unless you have a QFP+ switch.
+  Running an NVMe drive in the PCIe slot might be no go. It boots fine but then
+  the starts returning garbage data or timing out and the system goes nuts.
+  Same NVMe drive in a USB adapter is fine.
+
 # Links
 
 https://www.servethehome.com/gigabyte-r120-t30-overview-first-cavium-thunderx-system/
